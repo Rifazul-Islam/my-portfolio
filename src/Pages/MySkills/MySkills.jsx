@@ -5,8 +5,21 @@ import { TbBrandJavascript } from "react-icons/tb";
 import { DiResponsive } from "react-icons/di";
 const MySkills = () => {
   return (
-    <div id="skills" className="mt-24 pb-7 duration-1000 px-8 lg:px-10">
-      <h1 className="text-5xl text-center text-blue-500"> My Skills</h1>
+    <div id="skills" className="mt-24 pb-7 duration-5000 px-8 lg:px-10">
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-easing="linear"
+      >
+        <h1 className="text-4xl text-center text-blue-500 font-bold">
+          {" "}
+          My Skills
+        </h1>
+        <p className="mb-9 text-3xl font-bold text-center text-red-400">
+          {" "}
+          ...........................
+        </p>
+      </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-6 pt-12">
         <div

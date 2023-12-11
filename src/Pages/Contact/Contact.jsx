@@ -1,4 +1,5 @@
 import toast from "react-hot-toast";
+import { GrWaypoint } from "react-icons/gr";
 
 const Contact = () => {
   const handlerInfo = (e) => {
@@ -13,12 +14,27 @@ const Contact = () => {
   };
   return (
     <div className="my-14">
-      <h1 className="text-center text-blue-600 text-3xl font-bold">
-        {" "}
-        Contact Me
-      </h1>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1500"
+        data-aos-easing="linear"
+      >
+        <h1 className="text-center text-blue-600 text-3xl font-bold">
+          {" "}
+          Contact Me
+        </h1>
+        <p className="mb-9 text-3xl font-bold text-center text-red-400">
+          {" "}
+          ...........................
+        </p>
+      </div>
 
-      <div className="hero-content lg:w-1/3 mx-auto">
+      <div
+        data-aos="fade-right"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        className="hero-content lg:w-1/3 mx-auto "
+      >
         <div className="card shrink-0 w-full  shadow-2xl bg-[#323A46]">
           <form onSubmit={handlerInfo} className="card-body">
             <h1 className="text-center text-3xl font-bold"> Contact form</h1>
@@ -53,14 +69,16 @@ const Contact = () => {
               </label>
               <textarea
                 type="text"
-                className="input input-bordered bg-[#111827] pt-2"
+                className="input  input-bordered bg-[#111827] pt-2"
                 placeholder="Your Message"
                 name="message"
                 required
               />
             </div>
             <div className="form-control mt-6">
-              <button className="btn btn-primary">Login</button>
+              <button className="btn bg-[#60A5FA] border-none hover:bg-[#307bd7] ">
+                Send Message <GrWaypoint />{" "}
+              </button>
             </div>
           </form>
         </div>

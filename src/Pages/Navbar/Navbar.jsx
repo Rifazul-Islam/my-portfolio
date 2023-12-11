@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/imgs.png";
+
 const Navbar = () => {
   const menuItems = (
     <>
@@ -18,7 +19,14 @@ const Navbar = () => {
         <a href="#skills"> Skills</a>{" "}
       </li>
       <li className="">
-        <NavLink to="/contactInfo">ContactMe</NavLink>
+        <NavLink
+          to="/contact"
+          className={({ isActive }) =>
+            isActive ? "border-b-2 border-red-600" : " "
+          }
+        >
+          ContactMe
+        </NavLink>
       </li>
       <li className="duration-1000">
         {" "}
