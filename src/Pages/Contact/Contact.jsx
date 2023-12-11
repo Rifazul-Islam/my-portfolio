@@ -1,0 +1,72 @@
+import toast from "react-hot-toast";
+
+const Contact = () => {
+  const handlerInfo = (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const name = form.name.value;
+    const email = form.email.value;
+    const mess = form.message.value;
+    console.log(name, email, mess);
+    toast.success("Your Send Success");
+    form.reset();
+  };
+  return (
+    <div className="my-14">
+      <h1 className="text-center text-blue-600 text-3xl font-bold">
+        {" "}
+        Contact Me
+      </h1>
+
+      <div className="hero-content lg:w-1/3 mx-auto">
+        <div className="card shrink-0 w-full  shadow-2xl bg-[#323A46]">
+          <form onSubmit={handlerInfo} className="card-body">
+            <h1 className="text-center text-3xl font-bold"> Contact form</h1>
+            <div className="form-control">
+              <label className="label ">
+                <span className="label-text text-white">Name</span>
+              </label>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="input input-bordered bg-[#111827]"
+                name="name"
+                required
+              />
+            </div>
+
+            <div className="form-control">
+              <label className="label ">
+                <span className="label-text text-white">Email</span>
+              </label>
+              <input
+                type="email"
+                placeholder="Email"
+                className="input input-bordered bg-[#111827]"
+                name="email"
+                required
+              />
+            </div>
+            <div className="form-control">
+              <label className="label">
+                <span className="label-text text-white">Message</span>
+              </label>
+              <textarea
+                type="text"
+                className="input input-bordered bg-[#111827] pt-2"
+                placeholder="Your Message"
+                name="message"
+                required
+              />
+            </div>
+            <div className="form-control mt-6">
+              <button className="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;
