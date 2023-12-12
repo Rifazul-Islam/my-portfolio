@@ -69,7 +69,7 @@ const Contact = () => {
               </label>
               <textarea
                 type="text"
-                className="input  input-bordered bg-[#111827] pt-2"
+                className="input  input-bordered bg-[#111827] pt-5 h-20"
                 placeholder="Your Message"
                 name="message"
                 required

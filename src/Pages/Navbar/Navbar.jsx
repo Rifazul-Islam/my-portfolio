@@ -1,6 +1,7 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/imgs.png";
-
+import pdf from "../../documents/personal branding.pdf";
+import { MdOutlineFileDownload } from "react-icons/md";
 const Navbar = () => {
   const menuItems = (
     <>
@@ -58,14 +59,15 @@ const Navbar = () => {
         <div className="navbar-end hidden lg:flex">
           <ul className="text-center space-x-3 menu-horizontal p-0 text-white ">
             {menuItems}
-
-            {/* <li>
+            <li>
               {" "}
               <Link to={pdf} target="_blank">
                 {" "}
-                <button className="btn btn-sm">Resume DownLoad </button>{" "}
+                <button className="btn btn-sm bg-blue-500 border-none text-white">
+                  Resume <MdOutlineFileDownload />{" "}
+                </button>{" "}
               </Link>{" "}
-            </li> */}
+            </li>
           </ul>
         </div>
 
@@ -94,8 +96,16 @@ const Navbar = () => {
             className="menu-compact dropdown-content mt-3 space-y-2  space-x-3 mx-auto text-center  p-1 shadow  rounded-box  bg-black text-white "
           >
             {menuItems}
-
-            <li> {/* <a href={pdf}> DownLoad </a>{" "} */}</li>
+            <li>
+              {" "}
+              <Link to={pdf} target="_blank">
+                {" "}
+                <button className="btn btn-sm">
+                  {" "}
+                  <MdOutlineFileDownload />{" "}
+                </button>{" "}
+              </Link>{" "}
+            </li>
           </ul>
         </div>
       </div>

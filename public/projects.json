@@ -1,0 +1,15 @@
+[
+  {
+    "img": "https://i.ibb.co/yqTh4Hh/job1.png"
+  },
+  {
+    "img": "../src/assets/job1.png"
+  },
+  {
+    "img": "../src/assets/job1.png"
+  },
+  {
+    "title": "Job Nestle",
+    "description": "Through this project, online job services have been developed for, the major advantage of this..."
+  }
+]
