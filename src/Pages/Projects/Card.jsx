@@ -1,7 +1,14 @@
 import job1 from "../../assets/job1.png";
 import job2 from "../../assets/job2.png";
 import job3 from "../../assets/job3.png";
+import car1 from "../../assets/car1.png";
+import car2 from "../../assets/car2.png";
+import car3 from "../../assets/car3.png";
+import doc1 from "../../assets/doc1.png";
+import doc2 from "../../assets/doc2.png";
+import doc3 from "../../assets/doc3.png";
 import Slider from "../Slider/Slider";
+
 const Card = () => {
   return (
     <div>
@@ -21,9 +28,9 @@ const Card = () => {
         </div>
 
         <div className="card card-compact    bg-neutral shadow-xl">
-          <Slider img1={job1} img2={job2} img3={job3}></Slider>
+          <Slider img1={car1} img2={car2} img3={car3}></Slider>
           <div className="card-body">
-            <h2 className="card-title text-white ">Job Nestle</h2>
+            <h2 className="card-title text-white">Automotive</h2>
             <p className="text-white">
               Through this project, online job services have been developed for,
               the major advantage of this...
@@ -35,7 +42,7 @@ const Card = () => {
         </div>
 
         <div className="card card-compact    bg-neutral shadow-xl">
-          <Slider img1={job1} img2={job2} img3={job3}></Slider>
+          <Slider img1={doc1} img2={doc2} img3={doc3}></Slider>
           <div className="card-body">
             <h2 className="card-title text-white ">Job Nestle</h2>
             <p className="text-white">
