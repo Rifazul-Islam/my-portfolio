@@ -8,6 +8,7 @@ import doc1 from "../../assets/doc1.png";
 import doc2 from "../../assets/doc2.png";
 import doc3 from "../../assets/doc3.png";
 import Slider from "../Slider/Slider";
+import { Link } from "react-router-dom";
 
 const Card = () => {
   return (
@@ -16,13 +17,40 @@ const Card = () => {
         <div className="card card-compact    bg-neutral shadow-xl">
           <Slider img1={job1} img2={job2} img3={job3}></Slider>
           <div className="card-body">
-            <h2 className="card-title text-white ">Job Nestle</h2>
+            <h2 className="card-title text-white">Job Nestle</h2>
             <p className="text-white">
               Through this project, online job services have been developed for,
               the major advantage of this...
             </p>
-            <div className="card-actions justify-end">
-              {/* <Link to='/Details' > <button className="btn btn-primary">Visited Now <BsArrowRight className='pl-2 text-white text-2xl'/> </button>   </Link> */}
+            <div className="card-actions justify-center  py-4">
+              <Link
+                target="blank"
+                to="https://clinquant-salmiakki-88d614.netlify.app/"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Live Site
+                </button>{" "}
+              </Link>
+
+              <Link
+                target="blank"
+                to="https://github.com/Rifazul-Islam/job-nestle-client-side"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Client Site{" "}
+                </button>{" "}
+              </Link>
+              <Link
+                target="blank"
+                to="https://github.com/Rifazul-Islam/job-nestle-server-side"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Server Site{" "}
+                </button>{" "}
+              </Link>
             </div>
           </div>
         </div>
@@ -32,11 +60,35 @@ const Card = () => {
           <div className="card-body">
             <h2 className="card-title text-white">Automotive</h2>
             <p className="text-white">
-              Through this project, online job services have been developed for,
-              the major advantage of this...
+              Through this project, online Automotive services have been
+              developed for, the major advantage of this...
             </p>
-            <div className="card-actions justify-end">
-              {/* <Link to='/Details' > <button className="btn btn-primary">Visited Now <BsArrowRight className='pl-2 text-white text-2xl'/> </button>   </Link> */}
+            <div className="card-actions justify-center  py-4">
+              <Link
+                target="blank"
+                to="(https://automotive-client-side.web.app/"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Live Site
+                </button>{" "}
+              </Link>
+
+              <Link
+                target="blank"
+                to="https://github.com/Rifazul-Islam/brand-shop-client-side"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Client Site{" "}
+                </button>{" "}
+              </Link>
+              <Link>
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Server Site{" "}
+                </button>{" "}
+              </Link>
             </div>
           </div>
         </div>
@@ -44,13 +96,37 @@ const Card = () => {
         <div className="card card-compact    bg-neutral shadow-xl">
           <Slider img1={doc1} img2={doc2} img3={doc3}></Slider>
           <div className="card-body">
-            <h2 className="card-title text-white ">Job Nestle</h2>
+            <h2 className="card-title text-white ">Diagnostic</h2>
             <p className="text-white">
-              Through this project, online job services have been developed for,
-              the major advantage of this...
+              Through this project, online Diagnostic services have been
+              developed for, the major advantage of this...
             </p>
-            <div className="card-actions justify-end">
-              {/* <Link to='/Details' > <button className="btn btn-primary">Visited Now <BsArrowRight className='pl-2 text-white text-2xl'/> </button>   </Link> */}
+            <div className="card-actions justify-center py-4">
+              <Link target="blank" to="https://diagnostic-client-side.web.app">
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Live Site
+                </button>{" "}
+              </Link>
+
+              <Link
+                target="blank"
+                to="https://github.com/Rifazul-Islam/diagnostic-client-side"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Client Site{" "}
+                </button>{" "}
+              </Link>
+              <Link
+                target="blank"
+                to="https://github.com/Rifazul-Islam/diagnostic-server-side"
+              >
+                {" "}
+                <button className="btn btn-success  border-none">
+                  Server Site{" "}
+                </button>{" "}
+              </Link>
             </div>
           </div>
         </div>

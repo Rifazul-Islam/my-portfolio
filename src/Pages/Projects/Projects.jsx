@@ -1,16 +1,6 @@
-import { useEffect, useState } from "react";
 import Card from "./Card";
 
 const Projects = () => {
-  const [stores, setStore] = useState([]);
-  useEffect(() => {
-    fetch("/public/projects.json")
-      .then((res) => res.json())
-      .then((data) => setStore(data));
-  }, []);
-
-  console.log(stores);
-
   return (
     <div className="py-20">
       <div
